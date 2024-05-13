@@ -12,11 +12,11 @@
 }
 
 :root {
-    --bg-color: #d3f0fb;
-    --text-color: #1241ae;
-    --main-color: #13d2b2;
-    --white-color: #1e98ad;
-    --shadow-color: rgba(42, 174, 204, 0.975);
+    --bg-color: #e8f9ff;
+    --text-color: #19abcc;
+    --main-color: #0adad6;
+    --white-color: #16bbc1;
+    --shadow-color: rgba(20, 5, 40, 0.975);
 }
 
 *::selection {
@@ -423,8 +423,8 @@ span {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
-    color: var(--white-color);
+    background: linear-gradient(rgba(0, 0, 0, .1), #041f31) !important;
+color: whitesmoke;
     display: flex;
     justify-content: center;
     align-items: center;
