@@ -12,10 +12,10 @@
 }
 
 :root {
-    --bg-color: #ffffff;
+    --bg-color: #d3f0fb;
     --text-color: #1241ae;
-    --main-color: #379af2;
-    --white-color: #b8fbf8;
+    --main-color: #13d2b2;
+    --white-color: #1e98ad;
     --shadow-color: rgba(42, 174, 204, 0.975);
 }
 
@@ -190,7 +190,7 @@ section {
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    width: 150vw;
+    width:35vw;
     height: 100vh;
     overflow: hidden;
     pointer-events: none;
@@ -200,8 +200,8 @@ section {
     position: absolute;
     top: 0;
     right: 0;
-    width: 668px;
-    height: 100vh;
+    width: 168px;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -499,9 +499,8 @@ span {
 }
 
 .testimonial-slide img {
-    width: 14rem;
-    height: 14rem;
-    object-fit: cover;
+    width: 18rem;
+    height: 18rem;
     border-radius: 100%;
     border: 3px solid var(--bg-color);
     outline: 4px solid var(--main-color);
@@ -942,4 +941,12 @@ img {
   #regards {
     margin-top: 20px;
     text-align: center;
+
+  }
+  .my{   
+     margin-top: 40px;
+    color: var(--text-color);
+    font-size: 58px;
+    text-align: center;
+    background: var(--bg-color);
   }

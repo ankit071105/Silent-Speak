@@ -1,25 +1,35 @@
+
+:root {
+    --bg-color: #d3f0fb;
+    --text-color: #1241ae;
+    --main-color: #13d2b2;
+    --white-color: #1e98ad;
+    --shadow-color: rgba(42, 174, 204, 0.975);
+}
+
+.containers {
+ 
+    max-width: 600px;
+    background-color:var(--bg-color);
+    padding: 40px;
+
+    border-radius: 15%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 .ok {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; color: var(--text-color) !important;
     height:auto;
-    background-color: #320846;
+    padding: 100px;
+    border-radius: 10% 15%;
+    background-color:var(--shadow-color);
 
 }
-
-
-.containers {
-    width: 80%;
-    max-width: 600px;
-    background-color: #1984a888;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
 input[type="text"] {
     width: 100%;
     padding: 10px;
