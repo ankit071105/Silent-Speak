@@ -14,9 +14,124 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/my.css">
     <link rel="shortcut icon" href="images/1200.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
 </head>
 
 <body>
+    <div id="particles-js"></div>
+        <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 5,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
     <header class="header">
         <a href="#" class="logo"><img src="images/121111.jpg" alt="" style="width:100px; height: 80px; border-radius: 100%"></a>
 
@@ -72,9 +187,9 @@
         <h2 class="heading">Exploratory <span> Data Research</span></h2>
 
         <div class="testimonial-wrapper">
-            <div class="testimonial-box mySwiper">
+            <div class="testimonial-box mySwiper" >
                 <div class="testimonial-content swiper-wrapper">
-                    <div class="testimonial-slide swiper-slide">
+                    <div class="testimonial-slide swiper-slide"  style="background: black !important;">
                         <img src="images/20.jpeg" alt="">
                         <h3>Navigating the Silent Spectrum</h3>
                         <p>
@@ -96,8 +211,8 @@ As of the last available data, approximately 15% of the world's population, or a
         <div class="testimonial-wrapper">
             <div class="testimonial-box mySwiper">
                 <div class="testimonial-content swiper-wrapper">
-                    <div class="testimonial-slide swiper-slide">
-                        <img src="images/20.jpeg" alt="">
+                    <div class="testimonial-slide swiper-slide"  style="background: black !important;">
+                        <img src="images/20.jpeg" alt="" >
                         <h3>Silent Strength"</h3>
                         <p>
                             According to the Census of India 2011, approximately 2.21% of the Indian population reported having a speech disability.
@@ -115,7 +230,7 @@ As of the last available data, approximately 15% of the world's population, or a
                             <a href="https://simple.wikipedia.org/wiki/Muteness#:~:text=A%20person%20that%20cannot%20speak,be%20silent%20rather%20than%20mute.">More information </a>
                                 </button>
                     </div>
-                    <div class="testimonial-slide swiper-slide">
+                    <div class="testimonial-slide swiper-slide"  style="background: black !important;">
                         <img src="images/22.jpeg" alt="">
                         <h3>Sound Sculptors"</h3>
                         <p>
@@ -134,7 +249,7 @@ As of the last available data, approximately 15% of the world's population, or a
                             <a href="https://simple.wikipedia.org/wiki/Deafness">More information </a>
                                 </button>
                     </div>
-                    <div class="testimonial-slide swiper-slide">
+                    <div class="testimonial-slide swiper-slide"  style="background: black !important;">
                         <img src="images/23.jpeg" alt="">
                         <h3>Silent Strength"</h3>
                         <p>
@@ -367,7 +482,7 @@ entertainment and engagement for users.
     <section class="containers" id="morse">
         <br>
         <br>
-        <h1 style="text-align: center; font-size: 34px; border-bottom: 10px solid rgb(107, 224, 220);">Text to Morse Code Converter</h1>
+        <h1 style="text-align: center; font-size: 42px;"> Text to Morse Code Converter</h1>
         <br>
         <br>
         <input type="text" id="inputText" placeholder="Enter text...">
@@ -377,20 +492,20 @@ entertainment and engagement for users.
 
 <br>
 <br>
-<div class="container" id="ser">
+<div class="container" id="ser" style="background: rgb(11, 2, 64);">
     <h2>Feedback Form</h2>
     <form id="feedbackForm">
-      <input type="text" id="name" placeholder="Your Name">
-      <input type="email" id="email" placeholder="Your Email">
-      <input type="tel" id="phone" placeholder="Your Phone Number">
-      <textarea id="feedback" placeholder="Your Valuable Feedback"></textarea>
-      <input type="button" value="Submit" onclick="submitForm()">
+      <input type="text" id="name" placeholder="Your Name" style="background: rgb(133, 245, 251);">
+      <input type="email" id="email" placeholder="Your Email"style="background: rgb(133, 245, 251);">
+      <input type="tel" id="phone" placeholder="Your Phone Number" style="background: rgb(133, 245, 251);">
+      <textarea id="feedback" placeholder="Your Valuable Feedback" style="background: rgb(133, 245, 251);"></textarea>
+      <input type="button" value="Submit" onclick="submitForm()" style="background: rgb(6, 102, 147);">
     </form>
-    <p id="regards">Regards From Team Silent Speak</p>
+    <p id="regards" >Regards From Team Silent Speak</p>
   </div>
 <br>
 <br>
-<div class="" style="display: flex; justify-content: center;">
+<div class="" style="display: flex; justify-content: center; ">
     <h1 style="margin-top:5px;">For More Projects : </h1>
     <br>
     <br>

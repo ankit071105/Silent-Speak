@@ -12,10 +12,10 @@
 }
 
 :root {
-    --bg-color: #e8f9ff;
-    --text-color: #19abcc;
-    --main-color: #0adad6;
-    --white-color: #16bbc1;
+    --bg-color: #021d24;
+    --text-color: #8efdff;
+    --main-color: #1aa1ad;
+    --white-color: #62d4f6;
     --shadow-color: rgba(20, 5, 40, 0.975);
 }
 
@@ -950,3 +950,16 @@ img {
     text-align: center;
     background: var(--bg-color);
   }
+  #particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; 
+    background-color: #000;
+  }
+.home-content {
+    position: relative;
+    z-index: 1;
+}

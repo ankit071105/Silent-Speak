@@ -2,10 +2,8 @@
 .containers {
  
     max-width: 600px;
-    background-color:var(--bg-color);
     padding: 40px;
-
-    border-radius: 15%;
+    border-radius: 25%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -19,7 +17,7 @@
     height:auto;
     padding: 100px;
     border-radius: 10% 15%;
-    background-color:var(--shadow-color);
+
 
 }
 input[type="text"] {
