@@ -190,7 +190,7 @@ section {
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    width:35vw;
+    width:25vw;
     height: 100vh;
     overflow: hidden;
     pointer-events: none;
