@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/my.css">
+    <link rel="stylesheet" href="css/pop.css">
     <link rel="shortcut icon" href="images/1200.png" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-
 </head>
 
 <body>
@@ -182,7 +182,37 @@
             <img src="images/211.png" alt="" style="border-radius: 100%; width: 550px; height: 550px; padding: 50px !important; margin-bottom: 200px !important; margin-right: 200px !important;">
         </div>
     </section>
+    <div id="popup" class="popup">
+        <div class="popup-content">
 
+            <form id="popupForm">
+                <label for="popupName">Name:</label>
+                <input type="text" id="popupName" name="name" required>
+                <label for="popupEmail">Email:</label>
+                <input type="email" id="popupEmail" name="email" required>
+                <label for="popupPhone">Phone Number:</label>
+                <input type="tel" id="popupPhone" name="phone" required>
+                <button type="submit" class="btn">OK</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    const popup = document.getElementById('popup');
+    popup.style.display = 'flex';
+    document.getElementById('popupForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const name = document.getElementById('popupName').value;
+        const email = document.getElementById('popupEmail').value;
+        const phone = document.getElementById('popupPhone').value;
+        popup.style.display = 'none';
+        console.log('Name:', name);
+        console.log('Email:', email);
+        console.log('Phone:', phone);
+    });
+});
+
+    </script>
     <div class="testimonial-container" id="ios">
         <h2 class="heading">Exploratory <span> Data Research</span></h2>
 
