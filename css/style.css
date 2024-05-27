@@ -12,9 +12,9 @@
 }
 
 :root {
-    --bg-color: #021d24;
-    --text-color: #30cfef;
-    --main-color: #ff9233;
+    --bg-color: #072c2f;
+    --text-color: #7ce8fe;
+    --main-color: #ff9317;
     --white-color: #62d4f6;
     --shadow-color: rgba(20, 5, 40, 0.975);
 }
@@ -25,9 +25,10 @@
 }
 
 .dark-mode {
-    --bg-color: #0b061f;
-    --text-color: #d9c1fb;
-    --shadow-color: rgba(0, 0, 0, .7);
+    --bg-color: #08233a;
+    --text-color: #f7fffc;
+    --main-color: #ed5306;
+    --shadow-color: rgb(133, 245, 255);
 }
 
 html {
