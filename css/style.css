@@ -12,11 +12,13 @@
 }
 
 :root {
-    --bg-color: #072c2f;
-    --text-color: #7ce8fe;
-    --main-color: #ff9317;
+ 
     --white-color: #62d4f6;
     --shadow-color: rgba(20, 5, 40, 0.975);
+    --bg-color: #08233a;
+    --text-color: #f7fffc;
+    --main-color: #ed5306;
+    --shadow-color: rgb(2, 33, 36);
 }
 
 *::selection {
@@ -25,10 +27,11 @@
 }
 
 .dark-mode {
-    --bg-color: #08233a;
-    --text-color: #f7fffc;
-    --main-color: #ed5306;
-    --shadow-color: rgb(133, 245, 255);
+    --bg-color: #072c2f;
+    --text-color: #7cf5fe;
+    --main-color: #ff9317;
+    --white-color: #f3f5f6;
+    --shadow-color: rgb(6, 29, 52);
 }
 
 html {
