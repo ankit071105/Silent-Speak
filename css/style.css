@@ -976,7 +976,7 @@ img {
     opacity: 0.8;
     pointer-events: none;
     transform: scale(0);
-    background: linear-gradient(to bottom right, #00ff00 0%, #ffffff 70%);
+    background: linear-gradient(to top, #ff0000 50%,  #0953f3 100%);
     clip-path: path("
         M 50 0 
         C 20 0, 10 30, 10 50 
@@ -984,7 +984,7 @@ img {
         A 1 1, 10, 10, 1, 10 70 
         C 10 30, 30 0, 50 0 Z"
         );
-border-radius: 70% 20% 35% 45%;
+border-radius: 100%;
     animation: splash 1s ease-out forwards;
 }
 @keyframes splash {
