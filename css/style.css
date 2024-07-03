@@ -13,11 +13,11 @@
 
 :root {
  
-    --white-color: #62d4f6;
+    --white-color: #bad520;
     --shadow-color: rgba(20, 5, 40, 0.975);
     --bg-color: #08233a;
     --text-color: #f7fffc;
-    --main-color: #ed5306;
+    --main-color: #8922b2;
     --shadow-color: rgb(2, 33, 36);
 }
 
@@ -27,9 +27,9 @@
 }
 
 .dark-mode {
-    --bg-color: #072c2f;
-    --text-color: #7cf5fe;
-    --main-color: #ff9317;
+    --bg-color: #260e5b;
+    --text-color: #e6daff;
+    --main-color: #dc152f;
     --white-color: #f3f5f6;
     --shadow-color: rgb(6, 29, 52);
 }
@@ -551,7 +551,8 @@ color: whitesmoke;
 
 .footer-text p {
     font-size: 1.6rem;
-    color: var(--white-color);
+    font-weight: bolder;
+    color: rgb(150, 223, 82) !important;
 }
 
 .footer-iconTop a {
@@ -572,7 +573,7 @@ color: whitesmoke;
 
 .footer-iconTop a i {
     font-size: 2.4rem;
-    color: #333;
+    color: #481182;
 }
 
 
