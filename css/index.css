@@ -2,28 +2,57 @@
 .containers {
  margin-top: 400px;
 
-    /* max-width: 600px;
-    padding: 40px;
-    border-radius: 25%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
 .ok {
     font-family: Arial, sans-serif;
     margin: 0;
-    box-shadow: 40px 30px 60px var( --main-color); 
     padding: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-     color: var(--text-color) !important;
-    height:400px;
-  background-color: rgb(23, 1, 33);
+    color: var(--text-color);
+    height: 400px;
+    background-color: rgb(23, 1, 33);
     border-radius: 10% 15%;
     max-width: 500px;
-
-
+    position: relative;
+    border: 5px solid red;
+    animation: borderAnimation 5s infinite;
 }
+
+.ok::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    translate: -50% -50%;
+    left: 50%;
+    top: 50%;
+    z-index: -1;
+    padding: 5px;
+   
+    border-radius: 10px;
+}
+
+@keyframes borderAnimation {
+    0% {
+        border-color: red;
+    }
+    25% {
+        border-color: rgb(237, 216, 23);
+    }
+    50% {
+        border-color: rgb(40, 93, 239);
+    }
+    75% {
+        border-color: rgb(211, 43, 223);
+    }
+    100% {
+        border-color: rgb(121, 60, 235);
+    }
+}
+
 input[type="text"] {
     width: 100%;
     padding: 10px;
