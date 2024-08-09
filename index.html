@@ -16,12 +16,68 @@
     <link rel="stylesheet" href="css/pop.css">
     <link rel="shortcut icon" href="images/1200.png" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<style>
+
+
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+.hero-slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.slide.active {
+    opacity: 1;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #d9f7f5;
+    font-size: 4em;
+    background: rgba(13, 32, 83, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+</style>
 </head>
 
 <body>
   
     <div id="particles-js"></div>
-
+  
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   
@@ -32,8 +88,6 @@
             <a href="#about">About</a>
             <a href="#techno">Technology</a>
             <a href="#ach">Achievement</a>
-            <a href="#ios">Research</a>
-            <a href="#morse">Conversion</a>
             <a href="video.html">Videos</a>
             <a href="service.html">Services</a>
         </nav>
@@ -47,34 +101,74 @@
     </header>
     
     <section class="home" id="home">
-    
-        <div class="home-content">
-            <h1>Silent Speak</h1>
-            <br>
-<br>
-<h3>Transforming Silences </h3>
-<br>
-<br>
-<h3>into Speech</h3>
-<br>
-<br>
-<br>
-            <p>
-                SilentSpeak is a groundbreaking project aimed at transforming communication for individuals facing speech impairments or disabilities that limit their ability to speak. By harnessing the power of Morse code and touch sensing technology.
-            </p>
+        <div class="hero-slider">
+            
+            <div class="slide active">
+                <img src="https://ideogram.ai/assets/progressive-image/balanced/response/natF4rP1QxKgRT6b8ZB2XA" alt="Slide 1">
 
-     
+                <div class="caption">Turn Thoughts into Speech – Let Silent Speak Be Your Voice</div>
+            </div>
+         
+            <div class="slide">
+                <img src="https://ideogram.ai/assets/progressive-image/balanced/response/OIfwuJpqT0-pODVgIdZSBQ" alt="Slide 2">
+                <div class="caption">Speak Beyond Words – Silent Speak Makes It Possible.</div>
+            </div>
+            <div class="slide">
+                <img src="https://ideogram.ai/assets/progressive-image/balanced/response/ag68V9f7SpqumQC0vSqJNA" alt="Slide 3">
+                <div class="caption">No Voice? No Problem. Silent Speak Has You Covered.</div>
+            </div>
+       
+            <div class="slide">
+                <img src="https://ideogram.ai/assets/progressive-image/balanced/response/B8PeVJI0TAWWpoGD4j6yVw" alt="Slide 4">
+                <div class="caption">Speak Freely, Speak Silently – With Silent Speak.</div>
+            </div>
 
+            <div class="slide">
+                <img src="https://ideogram.ai/assets/progressive-image/balanced/response/vNHLyAChSzCua8t2caSeiw" alt="Slide 5">
+                <div class="caption">Find Your Voice with Silent Speak – No Words Needed!</div>
+            </div>
+        
+            <div class="slide">
+                <img src="https://ideogram.ai/assets/progressive-image/balanced/response/lZrOFK9xQGmE8fxm38xrNQ" alt="Slide 6">
+                <div class="caption">Silent Speak: Transforming Communication, One Signal at a Time.</div>
+            </div>
+        
+        
+            <div class="slide">
+                <img src="https://ideogram.ai/assets/progressive-image/balanced/response/Nk3y2y6YTJ-4qr3J-5pYGw" alt="Slide 7">
+                <div class="caption">Silent Speak: Bridging Silence with Technology.</div>
+            </div>
 
+            <div class="slide">
+                <img src="https://ideogram.ai/assets/progressive-image/balanced/response/QT77RHe3Rq6kVnPbQoSCpg" alt="Slide 8">
+                <div class="caption">From Morse to More – Silent Speak Gives You a Voice.</div>
+            </div>
+
+           
+            <div class="slide">
+                <img src="https://ideogram.ai/assets/progressive-image/balanced/response/Mqvdf3fKTT6JjF8BWGBN7g" alt="Slide 9">
+                <div class="caption">Silent Speak: Make Every Keystroke Count</div>
+            </div>
         </div>
-   
-
-            <div class="overlay"></div>
-        </div>
-        <div class="home-img">
-            <img src="images/211.png" alt="" style="border-radius: 100%; width: 500px; height: 500px; padding: 50px !important; margin-bottom: 100px !important; margin-right: 100px !important;">
-        </div>
+        
     </section>
+    <script>
+        let currentIndex = 0;
+const slides = document.querySelectorAll('.hero-slider .slide');
+const totalSlides = slides.length;
+
+function showSlide(index) {
+    slides[currentIndex].classList.remove('active');
+    currentIndex = (index + totalSlides) % totalSlides;
+    slides[currentIndex].classList.add('active');
+}
+
+function autoSlide() {
+    showSlide(currentIndex + 1);
+}
+setInterval(autoSlide, 5000);
+
+    </script>
 
     <div class="testimonial-container" id="ios">
         <h2 class="heading">Exploratory <span> Data Research</span></h2>
@@ -240,12 +334,25 @@ entertainment and engagement for users.
     <br><br><br>
     <footer class="footer" id="contact">
         <div class="footer-text">
+           
             <p style="color: rgb(14, 52, 142);">Copyright &copy; Silent-Speak 2024 | All Rights Reserved  </p>
+           
             <p>
 
                 <B style="color: rgb(90, 206, 151);">Designed by <a href="https://www.linkedin.com/in/ankit-kumar-01a52827b/" style="color: rgb(10, 15, 97);">ankit</a></B>
             </p>
         </div>
+        <p style="font-weight: bolder;color: var(--white-color);text-align: center;">Number of visitors   : <span class="counter" id="visitor-count" style="color: var(--white-color); font-weight: bolder;text-align: center;"></span></p>
+        <script>
+            if (!localStorage.getItem('visitorCount')) {
+                localStorage.setItem('visitorCount', 1);
+            } else {
+                let count = parseInt(localStorage.getItem('visitorCount'));
+                count += 1;
+                localStorage.setItem('visitorCount', count);
+            }
+            document.getElementById('visitor-count').textContent = localStorage.getItem('visitorCount');
+        </script>
         <div class="social-media"  style="display: flex !important; justify-content: space-between !important; margin-top: 30px;">
             <a href="https://www.instagram.com/silentspeak09/"  style="color: aliceblue; background: rgb(231, 138, 16); font-size: 40px;border-radius: 50%; height: 60px;padding-left: 10px; padding-right: 10px;margin-right: 10px;"><i class='bx bxl-instagram-alt'></i></a>
             <a href="https://www.linkedin.com/in/silent-speak/"  style="color: aliceblue; background: rgb(29, 83, 190); font-size: 40px;border-radius: 50%; height: 60px;padding-left: 10px; padding-right: 10px;margin-right: 10px;"><i class='bx bxl-linkedin'></i></a>
